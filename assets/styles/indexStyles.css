@@ -1,0 +1,28 @@
+.wrapper {
+  background-color: gray;
+  height: 100%;
+}
+
+.board {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (7rem)[3];
+      grid-template-rows: repeat(3, 7rem);
+  -ms-grid-columns: (7rem)[3];
+      grid-template-columns: repeat(3, 7rem);
+  grid-gap: 4px;
+  margin-left: calc(50% - 7rem/2);
+  padding-top: calc(25% - 7rem/2);
+}
+
+.board .tile {
+  background-color: white;
+  cursor: pointer;
+  font-size: 80px;
+  text-align: center;
+}
+
+.board .tile:hover {
+  background-color: #d4d4d4;
+}
+/*# sourceMappingURL=indexStyles.css.map */

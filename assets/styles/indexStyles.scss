@@ -1,0 +1,23 @@
+$boardWidth: 7rem;
+
+.wrapper{
+  background-color: gray;
+  height: 100%;
+}
+.board{
+  display: grid;
+  grid-template-rows: repeat(3, $boardWidth);   
+  grid-template-columns: repeat(3, $boardWidth);
+  grid-gap: 4px;
+  margin-left: calc(50% - #{$boardWidth}/2);
+  padding-top: calc(25% - #{$boardWidth}/2);
+  .tile{
+    background-color: white;
+    cursor: pointer;
+    font-size: 80px;
+    text-align: center;
+  }
+  .tile:hover{
+    background-color: rgb(212, 212, 212);
+  }
+}
